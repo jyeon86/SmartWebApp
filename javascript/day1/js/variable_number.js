@@ -9,4 +9,4 @@ console.log("What is number2:"+isFinite(number2));
 console.log("What is number3:"+isFinite(number2));
 
 var number4 = 10;
-console.log("in NAN number4 : "+isNan(number4))
+console.log("in NAN number4 : "+isNaN(number4))
