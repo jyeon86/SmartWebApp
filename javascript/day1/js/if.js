@@ -5,7 +5,7 @@ else console.log("num는 홀수입니다.");
 
 var id = prompt("id를 입력하세요");
 if(id == "green"){
-    var id = prompt("pw를 입력하세요");
+    var pw = prompt("pw를 입력하세요");
 
     if(pw == "green"){
         alert("로그인성공");
