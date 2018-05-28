@@ -45,17 +45,44 @@ for(i=1 ; i<=a ; i++)
         G=i;
 
 console.log("최대공약수는 : " + G)
+
+
 /////////////////////최소공배수/////////////////////
 
 var c=10, d=15;
-var G=0, L=0;
+var G1=0, L1=0;
 
 for(i=1 ; i<=a ; i++)
     if(c%i == 0 && d%i == 0)
-        G=i;
+        G1=i;
     
-L=(c*d)/G;
+L1=(c*d)/G1;
 
-console.log("최소공배수는 : " + L);
+console.log("최소공배수는 : " + L1);
 
+//////////////////////////////////////////////////////
+var num2=10, num1=15;
+var lcm=1;
+for(i=num1; i<= num1 * num2; i += num1){
+    if(i%num2==0){
+        lcm= i;
+        break;}
+    }
 
+console.log("최소공배수는 : " + lcm);
+
+//////////////////////////////////////////////////////
+ cnt1= prompt("트리의 세로를 입력하세요");
+ cnt1= 1*cnt1;
+var tmp = "";
+for(i=1; i<=cnt1; i++ ){
+    for (j=1;cnt1-i;j++){
+       tmp += " ";
+    }
+
+    for (j=1; j<=2*i-1; j++){
+       tmp += "*"
+    }
+       console.log("tmp")
+       tmp="";
+}
