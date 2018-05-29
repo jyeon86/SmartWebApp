@@ -5,12 +5,12 @@ console.log("arr1 type : " + typeof arr1[0] +" "+ typeof arr1[1] +" "+typeof arr
 
 var arr2 = new Array( );
 arr2[4] = "123";
-console.log("arr2 : "+ arr2);
+console.log("arr2 : "+ arr2);/////////////////
 
 var arr3 = ["Hello","world"]
 var arr4 = arr3.concat(arr1);
 console.log("arr4 : " +arr4);
-arr4.push(1234);
+arr4.push(1234);///////////////////////////
 console.log("arr4 : " +arr4);
 var tmp = arr4.pop();
 console.log("arr4.pop() : "+tmp);
