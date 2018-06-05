@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+button{
+    width: 120px;
+    height: 55px;
+    font-size: 30px;
+}
+img{
+    width: 400px;
+}
+body{
+    background-color: black;
+}
