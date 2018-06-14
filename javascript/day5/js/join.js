@@ -18,31 +18,32 @@ formTag.onsubmit = function(){
     var inforBirth = document.getElementById('inforBirth');
     var inforNumber = document.getElementById('inforNumber');
 
-    inforId.style.display = 'none';
-    inforPwd.style.display = 'none';
-    inforPwdConfirm.style.display = 'none';
-    inforBirth.style.display = 'none';
+    
+    
+
+    
     inforNumber.style.display = 'none';
 
     var isOk = true;
-    var idRegex = /^[a-zA-Z]\w{4,9}$/;
-    var pwdRegex = /^(?=\w{8,20}$)\w*(\d[A-z]|[A-z]\d)\w*$/;
+    
 
-    //id의 길이가 0이면
-    if(id.length == 0 || !idRegex.test(id)){
-        inforId.style.display = 'block';
+    //id 유효성 검사
+    if(!checkValidId(id)){
         isOk = false;
     }
-    if(pwd.length == 0 || !pwdRegex.test(pwd)){
-        inforPwd.style.display = 'block';
+    //pwd 유효성 검사
+    if(!checkValidPw(pwd)){
         isOk = false;
     }
-    if(pwd != pwdConfirm){
-        inforPwdConfirm.style.display = 'block';
+
+    //pwdConfirm 유효성검사
+    if(!checkValidPwConfirm(pwdConfirm)){
         isOk = false;
     }
     
-    if(year.length != 4){
+}
+    
+    if(!checkValidBirth){
         inforBirth.innerHTML = '태어난 년도 4자리를 정확하게 입력하세요.';
         inforBirth.style.display = 'block';
         isOk = false;
@@ -60,9 +61,10 @@ formTag.onsubmit = function(){
         isOk = false;
     }
     
-    if(!isOk)
+    if(!isOk){
         return false;
-}
+    }
+
 function maxDay(month){
     switch(month){
         case '1': case '3': case '5': case '7': case '8': case '10': case '12':
@@ -73,3 +75,72 @@ function maxDay(month){
             return 30;
     }
 }
+/* ID의 유효성을 검사 */
+function checkValidId(id){
+    var idRegex = /^[a-zA-Z]\w{4,9}$/;
+    var inforId = document.getElementById('inforId');
+
+    inforId.style.display = 'none';
+    if(id.length == 0 || !idRegex.test(id)){
+        inforId.style.display = 'block';
+        return false;
+    }
+    return true;
+}
+function checkValidPw(pwd){
+    var pwdRegex = /^(?=\w{8,20}$)\w*(\d[A-z]|[A-z]\d)\w*$/;
+    var inforPwd = document.getElementById('inforPwd');
+    
+    inforPwd.style.display = 'none';
+    if(pwd.length == 0 || !pwdRegex.test(pwd)){
+        inforPwd.style.display = 'block';
+        return false;
+    }
+    return true;
+}
+/*비밀번호와 비밀번호 확인이 같은지를 확인하는 함수 */
+function checkValidPwConfirm(pwdConfirm){
+    //pwd(비밀번호)
+    var pwd = document.getElementById('pwd').value;
+
+    //비밀번호와 일치하지않을 때 보여율 문구
+    var inforPwdConfirm = document.getElementById('inforPwdConfirm');
+    inforPwdConfirm.style.display = 'none';
+
+    if(pwd != pwdConfirm){
+        inforPwdConfirm.style.display = 'block';
+        return false;
+    }
+    return true;
+    
+}
+
+function checkValidBirth(){
+    //year, month, day에 대한 객체의 값
+    var year = document.getElementById('year').value;
+    var month = document.getElementById('month').value;
+    var day = parseInt(document.getElementById('day').value);
+    //예외처리문구에 대한 객체정보
+    var inforBirth = document.getElementById('inforBirth');
+    //예외처리문구 가림
+    inforBirth.style.display = 'none';
+    //월의 마지막 날짜를 계산
+    var max = maxDay(month);
+
+    //유효성검사
+    if(year.length != 4){
+        inforBirth.innerHTML = '태어난 년도 4자리를 정확하게 입력하세요.';
+        inforBirth.style.display = 'block';
+        return false;
+    }else if(isNaN(parseInt(month))){
+        inforBirth.innerHTML = '태어난 월을 선택하세요.';
+        inforBirth.style.display = 'block';
+        return false;
+    }else if(isNaN(day) || day < 1 || day > max){
+        inforBirth.innerHTML = '태어난 일(날짜) 2자리를 정확하게 입력하세요.';
+        inforBirth.style.display = 'block';
+        return false;
+    }
+return true;
+}
+
