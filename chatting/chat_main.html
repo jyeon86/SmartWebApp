@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/index.css' />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Chatting client01</title>
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/join.css">
     <!-- jQuery library -->
@@ -15,25 +15,28 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/chatting/chat_main.css">
+    <script src=""></script>
 </head>
-<body>
-    <div><p><h2>채팅 클라이언트 01</h2></p>
-    </div>
-    <div>
-        <form class="form-inline" action="/action_page.php">
-            <label for="email" class="mr-sm-2"></label>
-            <input type="text" class="form-control mb-2 mr-sm-2" id="localhost" placeholder="localhost">
-            <label for="pwd" class="mr-sm-2"></label>
-            <input type="text" class="form-control mb-2 mr-sm-2" id="pwd" placeholder="3000">
-            <div class="form-check mb-2 mr-sm-2">
-            <label class="form-check-label">
-            </div>
-            <button type="submit" class="btn btn-outline-success mb-2">연결하기</button>
-            </form>
-    </div>
-<hr>
-<div><h4>결과 :</h4></div>
-<body>
+  <body>
+
     
-</body>
+      <div><p><h2>채팅 클라이언트 01</h2></p>
+      </div>
+      <div class="maindiv">
+          <form class="form-inline" action="/action_page.php">
+              <label for="email" class="mr-sm-2"></label>
+              <input type="text" class="form-control mb-2 mr-sm-2" id="hostInput" value="localhost">
+              <label for="pwd" class="mr-sm-2"></label>
+              <input type="text" class="form-control mb-2 mr-sm-2" id="portInput" value="3000">
+              <div class="form-check mb-2 mr-sm-2">
+              <label class="form-check-label">
+              </div>
+              <button type="submit" class="btn btn-outline-success mb-2">연결하기</button>
+              </form>
+      </div>
+
+  <hr>
+  <div><h4>결과 :</h4></div>
+ 
+  </body>
 </html>
