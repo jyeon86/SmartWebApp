@@ -1,67 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <link rel="stylesheet" href="../front-end/css/page1.css">
-        <title>Bootstrap Example</title>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-        <link rel="shortcut icon" href="images/icon32x32.png" />
-        <link rel="apple-touch-icon" sizes="114x114" href="images/icon114x114.png" />
-        <link href="/static/fontawesome/fontawesome-all.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/page1.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <title>청남대</title>
 </head>
 <body>
-<div>
-<div class="container">
-    <div class="headerr">
-            <button class="back"><i class="fas fa-angle-left"></i></button>
-            <h1>청남대 둘러보기</h1>
+    <nav class="main-nav">
+        <button class="back"><i class="fas fa-angle-left"></i></button>
+        <span class="title"> 청남대</span>
+        <div id="hamburger-wrapper">
+            <span id="hamburger"><i class="fas fa-bars"></i></span>
+        </div>
+    </nav>
 
-            <!--오른쪽햄버거-->  
+    <div class="menu">
+        <div class="inner-menu"> 대통령 기념관 </div>
+        <div class="inner-menu"> 하늘 정원 </div>
+        <div class="inner-menu"> 국화 축제 </div>
+        <div class="inner-menu"> 청남대본관 </div>
+        <div class="inner-menu"> 전망대 </div>
+        <div class="inner-menu"> 대통령광장 </div>
+        <div class="inner-menu"> 돌탑 </div>
+        <div class="inner-menu"> 음악분수대 </div>
+        <div class="inner-menu"> 영춘제 </div>
+    </div>
+    <div class="container-contents">
+        <h4 class="text-center sub-title"> 대통령 기념관 </h1>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/img_01_01.jpg" alt="" width="100%" height="auto">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/img_01_02.jpg" alt="Chicago" width="100%" height="auto">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="container-contents">
+        <h4 class="text-center sub-title"> 하늘정원 </h1>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/sk1.jpg" alt="" width="100%" height="100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/sk2.jpg" alt="Chicago" width="100%" height="100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/sk3.jpg" alt="Chicago" width="100%" height="100%">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>    
 
 
 
-        <nav id="sidenav">
-           
-                <header>  <span id="close-sidenav">&times;</span></header>
-                <ul>
-                    <li><a href="#">청남대 소개  <i class="fas fa-angle-right"></i></a></li>
-                    <li><a href="#">청남대 둘러보기<i class="fas fa-angle-right"></i></a></li>
-                    <li><a href="#">청남대 지도보기 <i class="fas fa-angle-right"></i></a></li>
-                    <li><a href="#">주변관광정보 <i class="fas fa-angle-right"></i></a></li>
-                    <li><a href="#">이용안내<i class="fas fa-angle-right"></i> </a></li>
+    <div class="container-contents">
+        <h4 class="text-center sub-title">국화축제 </h1>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/f1.jpg" alt="" width="100%" height="100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/f2.jpg" alt="Chicago" width="100%" height="100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/f3.jpg" alt="Chicago" width="100%" height="100%">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>        
+
+
+
+    <div class="container-contents">
+        <h4 class="text-center sub-title">청남대본관  </h1>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/b1.jpg" alt="" width="100%" height="100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/b2.jpg" alt="Chicago" width="100%" height="100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/b3.jpg" alt="Chicago" width="100%" height="100%">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>        
+
+
+
+    <div class="container-contents">
+        <h4 class="text-center sub-title">전망대  </h1>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/view1.jpg" alt="" width="100%" height="100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/view2.jpg" alt="Chicago" width="100%" height="100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/view3.jpg" alt="Chicago" width="100%" height="100%">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>        
+
+
+
+    <div class="container-contents">
+        <h4 class="text-center sub-title">대통령광장   </h1>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/president1.jpg" alt="" width="100%" height="100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/president2.jpg" alt="Chicago" width="100%" height="100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/president3.jpg" alt="Chicago" width="100%" height="100%">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>        
+
+
+
+    <div class="container-contents">
+        <h4 class="text-center sub-title">돌탑   </h1>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/st1.jpg" alt="" width="100%" height="100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/st2.jpg" alt="Chicago" width="100%" height="100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/st3.jpg" alt="Chicago" width="100%" height="100%">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>        
+
+
+
+    <div class="container-contents">
+        <h4 class="text-center sub-title">음악분수대</h1>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/music1.jpg" alt="" width="100%" height="100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/music2.jpg" alt="Chicago" width="100%" height="100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/music3.jpg" alt="Chicago" width="100%" height="100%">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>    
+
+    <div class="container-contents">
+            <h4 class="text-center sub-title">영춘제  </h1>
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
     
                 </ul>
-                </nav>
-                
-                <div id="hamburger-wrapper">
-                <span id="hamburger">&equiv;</span>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/young1.jpg" alt="" width="100%" height="100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/young2.jpg" alt="Chicago" width="100%" height="100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/young3.jpg" alt="Chicago" width="100%" height="100%">
+                    </div>
                 </div>
-<!--본문입니다-->      
-      <div class="container"></div>
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>    
+      
+    
 
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12834.295696464147!2d127.47695068635791!3d36.467851880292194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356527c750ec308d%3A0x95859328d857b5a3!2z7LKt64Ko64yA!5e0!3m2!1sko!2skr!4v1529303489301" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-      <div>청남대 지도</div>
-      <div><img src="./images/20090728141101.jpg" width="100%" alt="">    
-      </div>
-  
-      <div>1
-      </div>
-  
-      <div><img src="./images/20090728152451.jpg" width="100%" alt=""></div>
-      </div>      
-      <div>2
-      </div>
-  
-  </div>
-      <script src="./js/page1.js"></script>
 
-</div>    
+    <nav id="sidenav">
+        <header><span id="close-sidenav">&times;</span></header>
+        <ul>
+            <li><a href="/index.html">청남대 소개
+                <span class="arrows"><i class="fas fa-angle-right "></i></span></a>
+            </li>
+            <li><a href="/page1.html">청남대 둘러보기
+                <span class="arrows"><i class="fas fa-angle-right "></i></span></a>
+            </li>
+            <li><a href="/page2.html">청남대 지도보기
+                <span class="arrows"><i class="fas fa-angle-right "></i></span></a>
+            </li>
+            <li><a href="/page3.html">주변관광정보
+                <span class="arrows"><i class="fas fa-angle-right "></i></span></a>
+            </li>
+            <li><a href="/page4.html">이용안내
+                <span class="arrows"><i class="fas fa-angle-right "></i></span></a>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="/js/page1.js"></script>
 </body>
 </html>

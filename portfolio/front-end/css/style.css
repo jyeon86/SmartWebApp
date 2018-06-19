@@ -4,7 +4,9 @@ body{
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-color: rgba(14, 13, 13, 0.6)
+    background-color: rgba(14, 13, 13, 0.9);
+
+    z-index : 100;
 }
 /*배경만 webkit 프리픽스 추가-사파리와 크롬 호환성강화*/
 @keyframes changedBack {
@@ -21,7 +23,8 @@ body{
     animation-iteration-count : infinite;	
     -webkit-animation-name : changedBack;
 	-webkit-animation-duration : 50s;
-	-webkit-animation-iteration-count : infinite;
+    -webkit-animation-iteration-count : infinite;
+    background-color: rgba(14, 13, 13, 0.9);
 }
 
 
