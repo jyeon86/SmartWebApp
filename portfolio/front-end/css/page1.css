@@ -84,6 +84,9 @@ body.dark { background: rgba(0,0,0,.4); }
   text-decoration: none;
   padding: 5px 10px 5px 10px;
 }
+.inner-menu{
+  text-align: center;
+}
 
 
 .container-contents{
@@ -106,4 +109,13 @@ body.dark { background: rgba(0,0,0,.4); }
     display: inline-block;
     width: auto;
     padding: 10px 0;
+}
+a{
+  color: black;
+  font-weight: bold;
+}
+a:hover{
+  text-decoration-style: none;
+  text-decoration-line: none;
+  color: black;
 }

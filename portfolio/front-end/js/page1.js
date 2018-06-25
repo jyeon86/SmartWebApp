@@ -16,6 +16,10 @@ $("#close-sidenav").click(function() {
 $('.carousel').carousel({
   interval: 2000
 });
+/**$("header").click(function(){
+  location.href="../main.html";
+}); */
+
     var tabMenu = new Swiper('.tabMenu', {
         spaceBetween: 30,
         centeredSlides: true,

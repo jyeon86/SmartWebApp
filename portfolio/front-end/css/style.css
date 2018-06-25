@@ -8,7 +8,9 @@ body{
 
     z-index : 100;
 }
+
 .main{
+    padding-top: 100%;
     background: none;
     position: relative;
     overflow: hidden;
@@ -61,12 +63,7 @@ div{border-style: none;
     left: 10%;
     width: 80%;
 }
-.btnn:hover{
-    text-decoration: none;
-    text-decoration-line: none;
-    color: beige;
 
-}
 
 .intro{
     font-weight: 800px;
@@ -113,10 +110,7 @@ span{
 .roww1{ margin-top: 10px ;
     margin-bottom: 10px;
     
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    font-size: 20px;
+      font-size: 20px;
     display: inline-block;
     border-width: 1px;
     border-style: solid;
@@ -125,7 +119,10 @@ span{
     text-decoration: none;
     background-color: rgb(63, 58, 58, 0.8);
     color: beige;
-    float: left;
+    float: left; padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+ 
     }
 .roww2{ margin-top: 10px ;
     margin-bottom: 10px;
