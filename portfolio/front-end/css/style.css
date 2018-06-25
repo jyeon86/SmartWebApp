@@ -8,6 +8,22 @@ body{
 
     z-index : 100;
 }
+.main{
+    background: none;
+    position: relative;
+    overflow: hidden;
+    animation-name: aniCont;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-fill-mode: forwards;    
+    -webkit-animation-name: aniCont;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-delay: 0;
+    -webkit-animation-fill-mode: forwards;
+}
+
 /*배경만 webkit 프리픽스 추가-사파리와 크롬 호환성강화*/
 @keyframes changedBack {
 	0% {background-image: url("../images/main_visual_img04.gif");}
