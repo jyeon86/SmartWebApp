@@ -38,7 +38,7 @@ body.dark { background: rgba(0,0,0,.4); }
     display: block;
     height: 128px;
     color: white;
-    background-image: url(/images/top_logo.png);
+    background-image: url("../images/top_logo.png");
     background-repeat: no-repeat;
     background-position: center;
     /*background-size: 200px auto;*/
