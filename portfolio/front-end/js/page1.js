@@ -16,3 +16,18 @@ $("#close-sidenav").click(function() {
 $('.carousel').carousel({
   interval: 2000
 });
+    var tabMenu = new Swiper('.tabMenu', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        touchRatio: 0.2,
+        slideToClickedSlide: true,
+        hashNavigation: true
+    });
+    var tabContents = new Swiper('.tabContents', {
+        spaceBetween: 10,
+        centeredSlides: true,
+    });
+
+    tabContents.controller.control = tabMenu;
+    tabMenu.controller.control = tabContents;

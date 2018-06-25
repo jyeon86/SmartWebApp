@@ -20,6 +20,7 @@ body.dark { background: rgba(0,0,0,.4); }
   background: white;
   position: fixed;
   transition: 0.4s;
+  z-index: 10;
 }
 #sidenav ul { 
     margin: 0; 
@@ -83,14 +84,26 @@ body.dark { background: rgba(0,0,0,.4); }
   text-decoration: none;
   padding: 5px 10px 5px 10px;
 }
-.inner-menu{
-  display: inline-block;
-  margin-right: 15px;
-}
+
+
 .container-contents{
   padding: 0 10px;
 }
 .sub-title{
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.tabMenu{
+    background: #2f2d2d;
+    color: aliceblue;
+}
+.tabMenu .swiper-slide-active,
+.tabMenu .active{
+   color: rgb(238, 206, 25)
+}
+    
+.tabMenu .swiper-slide{
+    display: inline-block;
+    width: auto;
+    padding: 10px 0;
 }

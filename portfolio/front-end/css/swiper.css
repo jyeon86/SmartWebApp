@@ -1,0 +1,15 @@
+@charset 'utf=8';
+.tabMenu{
+    background: #2f2d2d;
+    color: aliceblue;
+}
+.tabMenu .swiper-slide-active,
+.tabMenu .active{
+    color: yellow;
+}
+    
+.tabMenu .swiper-slide{
+    display: inline-block;
+    width: auto;
+    padding: 10px 0;
+}
