@@ -119,3 +119,25 @@ a:hover{
   text-decoration-line: none;
   color: black;
 }
+#pointer1:hover{
+  cursor: pointer;
+}
+.map-left{
+  width: 50%;
+}
+.map-right{
+  width: 50%;
+}
+.form-inline{
+  margin-bottom: 50px;
+  float: right;
+  position: relative;
+  left: 0;
+}
+.inv-box{
+}
+iframe{
+  height: 500px;
+  width: auto;
+
+}

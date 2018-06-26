@@ -16,3 +16,6 @@ $("#close-sidenav").click(function() {
 $('.carousel').carousel({
   interval: 2000
 });
+$('.back').on("click",function(){
+window.history.back()
+});

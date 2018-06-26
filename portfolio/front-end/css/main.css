@@ -25,6 +25,7 @@ body{
     -webkit-animation-name: aniBackground;
     -webkit-animation-duration: 40s;
     -webkit-animation-iteration-count: infinite;
+    filter:blur(5px);
 }
 /* 애니메이션 */
 @keyframes aniBackground{
@@ -131,10 +132,10 @@ body{
 .main{
     animation-name: aniContents;
     animation-delay: 0s;
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
     -webkit-animation-name: aniContents;
     -webkit-animation-delay: 0s;
-    -webkit-animation-duration: 4s;
+    -webkit-animation-duration: 3s;
     -webkit-animation-fill-mode: forwards;
 }

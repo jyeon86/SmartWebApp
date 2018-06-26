@@ -19,6 +19,10 @@ $('.carousel').carousel({
 /**$("header").click(function(){
   location.href="../main.html";
 }); */
+$('.back').on("click",function(){
+  window.history.back()
+  });
+  
 
     var tabMenu = new Swiper('.tabMenu', {
         spaceBetween: 30,
