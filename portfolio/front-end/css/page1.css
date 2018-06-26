@@ -139,5 +139,12 @@ a:hover{
 iframe{
   height: 500px;
   width: auto;
-
+}
+@media(max-width:650px){
+  .map-left{
+    width: 100%;
+  }
+  .map-right{
+    width: 100%;
+  }
 }
