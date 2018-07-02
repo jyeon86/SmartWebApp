@@ -1,4 +1,4 @@
-
+/* animated 필터예제 */
 var elementCount = $(".font-red").find("*").prevObject.length;
 console.log(elementCount);
 $("#div").css("border", "2px solid blue");
@@ -21,3 +21,43 @@ $(".font-red").css("color", "red");
 :lt(n)//n번째 요소보다 작은 인덱스를 가진모든 요소
 :gt(n)//n번째 요소보다 큰 인덱스를 가진 모든 요소
 */
+
+// id가 run인 요소를 클릭하면 
+$("#run").click(function(){
+    // div 테그 요소중에서 animation이 적용된 요소들을 선택해서 
+    // colored 클래스가 적용되어 있으면 해제를 하고 
+    // colored 클래스가 적용되어 있지 않으면 적용한다.
+    $("div:animated").toggleClass("colored");
+});
+function animatedIt(){
+    // id가 mover인 요소에 slow 애니메이션을 적용을 하고,
+    // 애니메이션이 끝나면 animatedIT 을 호출한다.
+    $("#mover").slideToggle("slow",animatedIt);
+}
+animatedIt();
+
+
+/* focus 필터 예제 */
+// id가 contents인 요소의 모든 하위요소(*)중에서 focus blur 이벤트가 발생하면 함수를 실행한다.
+$("#contents").delegate("*", "focus blur", function(){
+    // 이벤트가 발생된 객체의 정보를 element 저장한다.
+    var element = $(this); //this 는 현재 활성화된 객체를 의미
+    // 함수를  0초 뒤에 실행되도록setTimeout에 등록한다
+    setTimeout(function(){
+        // 객체에 focused 클래스가 있으면 제거, 없으면 추가하는데 
+        // 객체가 focus된 상태이면 
+        element.toggleClass("focused", element.is(":focus"));
+    },0);
+});
+
+// header예제
+// id가 header인 요소에서 header 테그(h1,..,h6)의 css를 수정한다.
+$("#header :header").css({background:"#ccc",color:"blue"});
+
+
+//lang()예제
+//언어가 en-us영어이면 usa클래스를 추가
+$("#lang div:lang(en-us)").addClass("usa");
+//언어가 en-es이면 spain클래스를 추가
+$("#lang div:lang(en-es)").addClass("spain");
+$("#lang div:lang(en-cn)").addClass("china");
