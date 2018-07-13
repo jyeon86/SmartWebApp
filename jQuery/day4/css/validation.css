@@ -1,0 +1,10 @@
+.error{
+    display: block;
+    word-break : keep-all;
+    color: red;
+    margin: 5px 0;
+}
+#id-error{
+    word-break : keep-all;
+
+}
