@@ -1,0 +1,230 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.container-header{
+    width: 1080px;
+    height: 218px;
+    margin: 0 auto;/*양여백가운데*/
+    border: 1px solid white;
+}
+.container-contents{
+    width: 1100px;
+    height: 436px;
+    margin: 0 auto;
+    border: 1px solid white;
+    padding: 0 10px 10px 10px;
+    background-color: gainsboro;
+}
+.container-bigin{
+    height: 120px;
+}
+.header-search{
+    height: 170px;
+    border: 1px solid white;
+    position: relative;
+}
+.header-menu{
+    height: 48px;
+    border: 1px solid white;
+}
+.header-logo{
+    padding-top: 59px;
+    position: relative; 
+    height: 100%;
+}
+.header-searching{
+    position: absolute;
+    top: 50%;
+    left: 219px;
+    margin-top: -18px;
+    width: 512px;
+    border: 3px solid #00ab33;
+}
+.search-container{
+    height: 41px;
+    margin: 2px;
+    display: inline-block;
+}
+.search-input{
+    margin: 11px 0 0 9px;
+    width: 405px;
+    height: 23px;
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;/*글자를 포함한 높이*/
+}
+.fa-caret-down{
+    color: #00ab33;
+}
+.search-btn{
+    background-color: #00ab33;
+    color: white;
+    display: inline-block;
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    float: right;
+    text-align: center;
+    padding-top: 5px;
+}
+.header-link{
+    position: absolute;
+    top: 11px;
+    right: -5px;
+    zoom: 1;
+    font-size: 12px;
+}
+.header-link a{
+    text-decoration: none;
+    color: #888888
+}
+.header-link a:visited{
+    text-decoration: none;
+    color: #888888
+}
+.header-promotion{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -18px;
+    display: block;
+}
+
+.center{
+    margin: 9px 0 0 2px;
+    display: inline-block;
+    font-weight: 900;
+}
+a,
+a:hover,
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+.color-green{
+    color: #00ab33;
+}
+.color-black{
+    color: black;
+}
+.color-gray{
+    color: #888;
+}
+.realtime-search{
+    display: inline-block;
+    float: right;
+    height: 48px;
+    width: 200px;
+    padding: 9px 0 0 0;
+}
+.realtime-search i{
+    float: right;
+    margin: 5px 10px 0 0;
+}
+.left-box{
+    margin: 8px 0 0 0;
+    height: 100%;
+    width: 740px;
+    border: 1px solid white;
+    display: inline-block;
+    float: left;
+}
+.right-box{
+    margin: 8px 0 0 0;
+    height: 100%;
+    width: 332px;
+    border: 1px solid white;
+    display: inline-block;
+    float: right;
+}
+.container-login{
+    width: 300px;/* 332-2(border*2)-30(15*2) */
+    height: calc(100% - 2px - 30px);
+    margin: 15px;
+}
+.login{
+    width: 210px;
+    height: 56px;
+    display: inline-block;
+}
+.security{
+    width: 80px;
+    height: 56px;
+    display: inline-block;
+    float: right;
+}
+.login-etc, .login-etc>a{
+    margin: 4px 0 0 0;
+    text-decoration: none;
+    color: #888888;
+    font-size: 12px;
+    display: inline-block;
+}
+.login-etc>a{
+    float: right;
+}
+.login-input, login-btn{
+    width: 154px;
+    display: inline-block;
+    height: 100%;
+}
+.login-btn{
+    text-align: center;
+    vertical-align: middle;
+    width: 56px;
+    height: 100%;
+    display: inline-block;
+    float: right;
+    background-color: #00ab33;
+    padding-top: 17px;
+    color: white;
+}
+.id-input,.pw-input{
+    width: 154px;
+    height: 28px;
+}
+.pw-input{
+}
+.security-ip,
+.security-tmp{
+    height: 28px;
+    width: 100%;
+    border: solid 1px gray;
+    text-align: center;
+}
+.security-tmp{
+    border-top : none;
+}
+.container-middle{
+    height: 300px;
+    margin-top: 8px 0 0 0;
+}
+.container-bigin .right-box{
+    background-color: white;
+}
+.news{
+    height: 46px;
+    border: solid 1px green;
+}
+.news-stand{
+    margin: 8px 0 0 0;
+    height: 246px;
+    border: solid 1px purple;
+}
+.etc{    
+    height: 142px;
+    border: solid 1px green;
+}
+.add{
+    height: 150px;    
+    margin: 8px 0 0 0;
+    border: solid 1px purple;
+}
