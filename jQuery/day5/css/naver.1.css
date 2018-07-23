@@ -107,8 +107,9 @@ a,
 a:hover,
 a:visited{
     text-decoration: none;
-    color: black;
+    color: #00ab33;
 }
+a .color-green,
 .color-green{
     color: #00ab33;
 }
@@ -141,7 +142,7 @@ a:visited{
     margin: 8px 0 0 0;
     height: 100%;
     width: 332px;
-    border: 1px solid white;
+    border: 1px solid gray;
     display: inline-block;
     float: right;
 }
@@ -212,19 +213,116 @@ a:visited{
 }
 .news{
     height: 46px;
-    border: solid 1px green;
+    background-color: white;
+    padding: 10px 7px 0 7px;
+    font-weight: 700;
+    color: rgb(56, 55, 55);
+    border: solid 1px gray;
+}
+.row div,
+.news>div {
+    display: inline-block;
 }
 .news-stand{
     margin: 8px 0 0 0;
     height: 246px;
-    border: solid 1px purple;
+}
+.news>#newsMenu{
+    float: right;
 }
 .etc{    
     height: 142px;
-    border: solid 1px green;
-}
+    border: solid 1px gray;
+    background-color: white;
+} 
 .add{
     height: 150px;    
     margin: 8px 0 0 0;
-    border: solid 1px purple;
+}
+#newsStandMenu{
+    height: 45px;
+    background-color: white;
+    border: solid gray 1px;
+}
+#newsStandList{
+    height: 200px;
+    font-size: 0px;
+    border-top: solid 1px gray;
+    border-bottom: solid 1px gray;
+}
+.row .news-list{
+    width: 123px;
+    height: 67px;
+    position: relative;
+}
+.border-right{
+    border-right: 1px solid gray;
+}
+.border-bottom{
+    border-bottom: 1px solid gray;
+}
+.news-list{
+    position: relative;
+}
+.abs{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+.abx2{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    z-index: 2;
+    font-size: 14px;
+    background-color: white;
+    height: 20px;
+    border: solid 1px gray;
+}
+#standMenuList{
+    float: right;
+    font-size: 0;
+}
+#standMenuList i{
+    font-size: 22px;
+}
+.border-box{
+    width: 45px;
+    height: 45px;
+}
+#standMenu{
+    margin: 8px 5px 0 5px;
+}
+
+#standMenuIcon{
+    float: right;
+}
+.border-left{
+    border-left: 1px solid gray;  
+} 
+#etcMenu{
+    height:34px;
+}
+#etcContents{
+    height: 100%;
+    border: 1px solid gray;  
+
+}
+
+.prevAndNext{
+    float: right;
+    font-size: 0px;
+}
+.border-box2{
+
+    width: 33px;
+    height: 33px;
+    display: inline-box;
+}
+.contNum{
+    float: right;
+}
+.border{
+    border: 1px solid gainsboro;
 }
